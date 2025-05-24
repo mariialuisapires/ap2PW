@@ -11,16 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
+        // Tabela de cartas
         Schema::create('cards', function (Blueprint $table) {
             $table->id();
-            
             $table->string("title");
             $table->string("description");
             $table->string("image");
-             
             $table->timestamps();
-
         });
+
     }
 
     /**
